@@ -5,6 +5,9 @@
         </div>
         <div class="row my-3">
             <SpinnerComponent v-if="!products"/>
+            <!-- <div v-else-if="errMsg">
+                <p class="lead bg-warning">{{ errMsg }}</p>
+            </div> -->
             <div v-else class="card-wrapper d-flex gap-3 flex-wrap">
                 <div class="card" v-for="product in products" :key="product.id">
                     <img :src="product.image" class="card-img-top img-fluid" :alt="product.make">
@@ -28,10 +31,13 @@ export default {
     computed: {
         products() {
             return this.$store.state.products
+        },
+        errMsg() {
+            return this.$store.state.errMsg
         }
     },
     mounted() {
-        this.$store.dispatch('fetchProducts')
+        this.$store.dispatch('fetchProducts');
     }
 }
 </script>
