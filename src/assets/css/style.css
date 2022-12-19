@@ -1,0 +1,23 @@
+
+/* =====Products====== */
+.card-wrapper {
+    justify-content: space-around;
+}
+/* Spinner */
+.spinner-border {
+    font-size: 2rem;
+    color: #2c3e50;
+    width: 6rem;
+    height: 6rem;
+}
+/* Products -Card */
+.card {
+    width: 18rem;
+}
+.card img {
+    margin: .5rem 0;
+    width: 18rem;
+    height: 12rem;
+    object-fit: cover;
+    object-position: center;
+}

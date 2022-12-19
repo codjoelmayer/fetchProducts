@@ -17,7 +17,7 @@ export default createStore({
     fetchProducts : async (context)=> {
       const res = await fetch(`${productUrl}`);
       const results = await res.json();
-      context.commit('setProducts', results);
+      context.commit('setProducts', results.products);
     }
   },
   modules: {
