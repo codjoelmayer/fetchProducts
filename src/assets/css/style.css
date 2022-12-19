@@ -14,10 +14,20 @@
 .card {
     width: 18rem;
 }
-.card img {
+.card img, 
+tbody img {
     margin: .5rem 0;
     width: 18rem;
     height: 12rem;
     object-fit: cover;
     object-position: center;
+}
+/* ==================== */
+/* ========Admin======= */
+.button-wrapper {
+    width: 100%!important;
+    justify-content: space-between;
+}
+.button-wrapper button {
+    margin:1rem 0!important;
 }
