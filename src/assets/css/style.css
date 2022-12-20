@@ -22,6 +22,10 @@ tbody img {
     object-fit: cover;
     object-position: center;
 }
+/* modal-dialog */
+.modal-dialog label {
+    color: #198754;
+}
 /* ==================== */
 /* ========Admin======= */
 .button-wrapper {
